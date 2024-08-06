@@ -28,7 +28,10 @@
   Return the result of invoking the callback.
 */
 
-// Code Here
+function first(array, callback) {
+  callback(array[0]);
+  return callback;
+}
 
 // Do not edit the code below.
 const names = ['Tyler', 'Cahlan', 'Ryan', 'Colt', 'Tyler', 'Blaine', 'Cahlan'];
@@ -48,7 +51,10 @@ first(names, function (firstName) {
   Return the result of invoking the callback.
 */
 
-//Code Here
+function last(array, callback) {
+  callback(array[array.length - 1]);
+  return callback;
+}
 
 // Do not edit the code below.
 // Your function is called here
@@ -65,7 +71,9 @@ last(names, (lastName) => {
   Invoke the callback, passing in the product of the two numbers multiplied as the argument.
 */
 
-//Code Here
+function multiply(num1, num2, callback) {
+  callback(num1 * num2);
+}
 
 // Do not edit the code below.
 // Your function is called here
@@ -83,7 +91,13 @@ multiply(4, 3, function (answer) {
   If the name does not exist, invoke the callback with false as the argument.
 */
 
-//Code Here
+function contains(array, name, callback) {
+  if (array.includes(name)) {
+    callback(true);
+  } else {
+    callback(false);
+  }
+}
 
 // Do not edit the code below.
 // Your function is called here
@@ -103,7 +117,10 @@ contains(names, 'Colt', (result) => {
   For each name in the array, invoke the callback and pass in the name and the name's index as arguments.
 */
 
-//Code Here
+function each(array, callback) {
+  array.forEach((value, idx) =>
+  callback(value, idx));
+}
 
 // Do not edit the code below.
 // Your function is called here
