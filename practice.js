@@ -213,7 +213,9 @@ const evens = (arrayNums) => {
 //
 // Make sure to use an arrow function combined with the filter method (not a for loop).
 
-// REPLACE THIS WITH YOUR CODE
+
+// const startWithLetterA = (arrayWords) => arrayWords.filter((word) => word.startsWith("a"));
+const startWithLetterA = (arrayWords) => arrayWords.filter((word) => word[0].toLowerCase() === "a");
 
 /// /////// PROBLEM 9 //////////
 
@@ -223,7 +225,7 @@ const evens = (arrayNums) => {
 //
 // Make sure to use arrow functions combined with the map method.
 
-// REPLACE THIS WITH YOUR CODE
+const formalGreeting = (arrayNames) => arrayNames.map((name) => "Hello, " + name);
 
 /// /////// PROBLEM 10 //////////
 
@@ -233,7 +235,7 @@ const evens = (arrayNums) => {
 // Remember that by default, JavaScript sorts by converting all items to strings. So you
 // will need to provide a compare function.
 
-// REPLACE THIS WITH YOUR CODE
+// const sortNumbers = (arrayNums) => 
 
 /// /////// PROBLEM 11 //////////
 
