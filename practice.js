@@ -194,7 +194,14 @@ getUserById(users, '16t', (user) => {
 // Make sure to use an arrow function.
 // You should not use a for loop, but should use the filter method instead.
 
-// REPLACE THIS WITH YOUR CODE
+const evens = (arrayNums) => {
+  const isEven = (num) => num % 2 === 0;
+  return arrayNums.filter(isEven);
+}
+
+// const evens = (arrayNums) => arrayNums.filter((num) => num % 2 === 0);
+
+
 
 /// /////// PROBLEM 8 //////////
 
