@@ -137,7 +137,14 @@ each(names, (item, index) => {
   When the correct user object is found, invoke the callback with the user object as an argument.
 */
 
-// Code here
+function getUserById(arrayUsers, id, callback) {
+  arrayUsers.forEach(user => {
+    if (user.id === id) {
+      callback(user);
+    } 
+  });
+}
+  console.log(getUserById);
 
 // Do not edit the code below.
 const users = [
